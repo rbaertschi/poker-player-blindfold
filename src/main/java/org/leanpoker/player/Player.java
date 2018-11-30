@@ -3,7 +3,7 @@ package org.leanpoker.player;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import org.leanpoker.player.state.PlayersItem;
-import org.leanpoker.player.state.Response;
+import org.leanpoker.player.state.Request;
 
 public class Player {
     // test comment
@@ -11,7 +11,7 @@ public class Player {
     static final String VERSION = "Default Java folding player";
 
     public static int betRequest(JsonElement request) {
-        Response    input     = new Gson().fromJson(request, Response.class);
+        Request     input     = new Gson().fromJson(request, Request.class);
         PlayersItem ourPlayer = input.getPlayers().get(input.getInAction());
 
         int newBet = input.getCurrentBuyIn() - ourPlayer.getBet() + input.getMinimumRaise();

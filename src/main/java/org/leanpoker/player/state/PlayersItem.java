@@ -27,7 +27,7 @@ public class PlayersItem {
     private String status;
 
     @SerializedName("hole_cards")
-    private List<HoleCardsItem> holeCards;
+    private List<CardsItem> holeCards;
 
     public int getBet() {
         return bet;
@@ -77,11 +77,11 @@ public class PlayersItem {
         this.status = status;
     }
 
-    public List<HoleCardsItem> getHoleCards() {
+    public List<CardsItem> getHoleCards() {
         return holeCards;
     }
 
-    public void setHoleCards(List<HoleCardsItem> holeCards) {
+    public void setHoleCards(List<CardsItem> holeCards) {
         this.holeCards = holeCards;
     }
 

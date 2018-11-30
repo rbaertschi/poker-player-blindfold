@@ -6,13 +6,13 @@ import javax.annotation.Generated;
 import java.util.List;
 
 @Generated("com.robohorse.robopojogenerator")
-public class Response {
+public class Request {
 
     @SerializedName("in_action")
     private int inAction;
 
     @SerializedName("community_cards")
-    private List<CommunityCardsItem> communityCards;
+    private List<CardsItem> communityCards;
 
     @SerializedName("players")
     private List<PlayersItem> players;
@@ -55,11 +55,11 @@ public class Response {
         this.inAction = inAction;
     }
 
-    public List<CommunityCardsItem> getCommunityCards() {
+    public List<CardsItem> getCommunityCards() {
         return communityCards;
     }
 
-    public void setCommunityCards(List<CommunityCardsItem> communityCards) {
+    public void setCommunityCards(List<CardsItem> communityCards) {
         this.communityCards = communityCards;
     }
 
@@ -154,7 +154,7 @@ public class Response {
     @Override
     public String toString() {
         return
-                "Response{" +
+                "Request{" +
                         "in_action = '" + inAction + '\'' +
                         ",community_cards = '" + communityCards + '\'' +
                         ",players = '" + players + '\'' +
