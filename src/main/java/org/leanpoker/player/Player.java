@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 import java.util.Map;
 
 public class Player {
+    // test comment
 
     static final String VERSION = "Default Java folding player";
 
